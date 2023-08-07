@@ -122,7 +122,7 @@ const TKuiz = () => {
               </>
             ) : (
               <>
-              <div className='text-slate-700 text-[16px] font-semibold'>
+              <div className='text-slate-700 text-[12px] md:text-[16px] font-semibold'>
                   <div className='m-4'>
                     <span>Pytjet {currentQuestion + 1}</span>/{allQuestions.length}
                   </div>
