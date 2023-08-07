@@ -12,45 +12,85 @@ const ReactKuiz = () => {
       {
         text: 'Çfarë është React?',
         options: [
-          { answerText: 'HTML', isCorrect: true },
-          { answerText: 'HTML', isCorrect: false },
-          { answerText: 'HTML', isCorrect: false },
+          { answerText: 'Një bibliotekë JavaScript për ndërtimin e faqeve të përdoruesit.', isCorrect: true },
+          { answerText: 'Një gjuhë programimi për ndërtimin e aplikacioneve mobile.', isCorrect: false },
+          { answerText: 'Një teknologji për sigurinë në rrjetat kompjuterike.', isCorrect: false },
         ],
       },
       {
-        text: 'Çfarë është HTML?',
+        text: 'Cili është qëllimi kryesor i React?',
         options: [
-          { answerText: 'HTML', isCorrect: true },
-          { answerText: 'HTML', isCorrect: false },
-          { answerText: 'HTML', isCorrect: false },
+          { answerText: 'Të lehtësojë krijimin e ndërfaqeve interaktive dhe të përdoruesit.', isCorrect: true },
+          { answerText: 'Të përdorë ngjarjet për zhvillimin e aplikacioneve.', isCorrect: false },
+          { answerText: 'Të automatizojë proceset e serverit.', isCorrect: false },
         ],
       },
       {
-        text: 'Çfarë është HTML?',
+        text: 'Cila është sintaksa e përdorur për të krijuar një komponent në React?',
         options: [
-          { answerText: 'HTML', isCorrect: true },
-          { answerText: 'HTML', isCorrect: false },
-          { answerText: 'HTML', isCorrect: false },
+          { answerText: '<Mjeku />', isCorrect: true },
+          { answerText: 'Komponenti:Mjeku', isCorrect: false },
+          { answerText: 'Mjeku = Komponenti', isCorrect: false },
         ],
       },
       {
-        text: 'Çfarë është HTML?',
+        text: 'Si mund të përdorim "props" në një komponent të React?',
         options: [
-          { answerText: 'HTML', isCorrect: true },
-          { answerText: 'HTML', isCorrect: false },
-          { answerText: 'HTML', isCorrect: false },
+          { answerText: 'props është një objekt që mban të dhënat nga komponenti prind.', isCorrect: true },
+          { answerText: 'props është një funksion që ndihmon në stilizim.', isCorrect: false },
+          { answerText: 'props është një metode për të ruajtur gjendjen.', isCorrect: false },
         ],
       },
       {
-        text: 'Çfarë është HTML?',
+        text: 'Si e quajmë veprimin kur komponenti përditësohet dhe renditet sërish?',
         options: [
-          { answerText: 'HTML', isCorrect: true },
-          { answerText: 'HTML', isCorrect: false },
-          { answerText: 'HTML', isCorrect: false },
+          { answerText: 'Renderim i ri.', isCorrect: true },
+          { answerText: 'Renditje e vjetër.', isCorrect: false },
+          { answerText: 'Përditësim i vazhdueshëm.', isCorrect: false },
         ],
       },
-    ]
-  
+      {
+        text: 'Cila është metoda kryesore e jetës së një komponenti në React?',
+        options: [
+          { answerText: 'render()', isCorrect: true },
+          { answerText: 'update()', isCorrect: false },
+          { answerText: 'create()', isCorrect: false },
+        ],
+      },
+      {
+        text: 'Çfarë është "JSX" në React?',
+        options: [
+          { answerText: 'Eshtë sintaksë e ngjashme me HTML për krijimin e elementeve të ndërfaqes në JavaScript..', isCorrect: true },
+          { answerText: 'Një lloj ngjarjeje në JavaScript.', isCorrect: false },
+          { answerText: 'Një metodë për manipulimin e stilizimeve në komponente.', isCorrect: false },
+        ],
+      },
+      {
+        text: 'Si quhet metoda e përdorur për të përditësuar gjendjen e një komponenti?',
+        options: [
+          { answerText: 'setState()', isCorrect: true },
+          { answerText: 'updateState()', isCorrect: false },
+          { answerText: 'changeState()', isCorrect: false },
+        ],
+      },
+      {
+        text: 'Cila është libraria për menaxhimin e gjendjes së aplikacionit në React?',
+        options: [
+          { answerText: 'Redux', isCorrect: true },
+          { answerText: 'React Router', isCorrect: false },
+          { answerText: 'Axios', isCorrect: false },
+        ],
+      },
+      {
+        text: 'Si mund të rendisim disa komponente brenda një komponenti prind në React?',
+        options: [
+          { answerText: '<Prindi> <Fëmija1 /> <Fëmija2 /> </Prindi>', isCorrect: true },
+          { answerText: '<Prindi> <Fëmija1> <Fëmija2> </Prindi>', isCorrect: false },
+          { answerText: '<Prindi> <Fëmija1, Fëmija2 /> </Prindi>', isCorrect: false },
+        ],
+      },
+    ];
+    
     const handleAnswerOptions = (isCorrect) => {
       if (isCorrect) {
         setscore(score + 1);
@@ -75,12 +115,14 @@ const ReactKuiz = () => {
                   You scored {score} out of {allQuestions.length}
                 </div>
                 <br></br>
-                <button className='m-2 h-10 w-44 rounded-md bg-slate-200 hover:bg-slate-100 hover:shadow-xl transition-all duration-500' onClick={()=> {window.location.reload()}}>Provo përsëri!</button>
-                <button className='m-2 h-10 w-44 rounded-md bg-slate-200 hover:bg-slate-100 hover:shadow-xl transition-all duration-500'><NavLink className='p-30px' to="/kuize">Kthehu!</NavLink></button>
+                <div className='flex flex- items-center justify-center md:flex-row'>
+                  <button className='m-2 h-10 w-44 rounded-md bg-slate-200 hover:bg-slate-100 hover:shadow-xl transition-all duration-500' onClick={()=> {window.location.reload()}}>Provo përsëri!</button>
+                  <p className='m-2 h-10 w-44 flex items-center justify-center rounded-md bg-slate-200 hover:bg-slate-100 hover:shadow-xl transition-all duration-500'><NavLink to="/kuize">Kthehu!</NavLink></p>
+              </div>
               </>
             ) : (
               <>
-                <div className='text-slate-700 text-xl font-semibold'>
+              <div className='text-slate-700 text-[16px] font-semibold'>
                   <div className='m-4'>
                     <span>Pytjet {currentQuestion + 1}</span>/{allQuestions.length}
                   </div>

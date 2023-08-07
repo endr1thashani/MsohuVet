@@ -13,44 +13,85 @@ const BKuiz = () => {
       {
         text: 'Çfarë është Bootstrap?',
         options: [
-          { answerText: 'HTML', isCorrect: true },
-          { answerText: 'HTML', isCorrect: false },
-          { answerText: 'HTML', isCorrect: false },
+          { answerText: 'Një framework CSS për zhvillimin e uebfaqeve për mobil.', isCorrect: true },
+          { answerText: 'Një gjuhë programimi për krijimin e aplikacioneve desktop.', isCorrect: false },
+          { answerText: 'Një librari JavaScript për animacione.', isCorrect: false },
         ],
       },
       {
-        text: 'Çfarë është HTML?',
+        text: 'Cili është qëllimi kryesor i përdorimit të Bootstrap?',
         options: [
-          { answerText: 'HTML', isCorrect: true },
-          { answerText: 'HTML', isCorrect: false },
-          { answerText: 'HTML', isCorrect: false },
+          { answerText: 'Të lehtësojë dhe të shpejtojë stilizimin dhe ndërtimin e faqeve.', isCorrect: true },
+          { answerText: 'Të krijojë efekte vizuale komplekse.', isCorrect: false },
+          { answerText: 'Të ndërtojë aplikacione mobile.', isCorrect: false },
         ],
       },
       {
-        text: 'Çfarë është HTML?',
+        text: 'Si mund të përdorim klaset e kolonave në Bootstrap?',
         options: [
-          { answerText: 'HTML', isCorrect: true },
-          { answerText: 'HTML', isCorrect: false },
-          { answerText: 'HTML', isCorrect: false },
+          { answerText: 'Përdorimi i "col" me ndarje të ndryshme të kolonave.', isCorrect: true },
+          { answerText: 'Përdorimi i "column" për kolona.', isCorrect: false },
+          { answerText: 'Përdorimi i "grid" për renditjen.', isCorrect: false },
         ],
       },
       {
-        text: 'Çfarë është HTML?',
+        text: 'Cili klase përdoret për të krijuar një menyrë e navigimit (navbar) në Bootstrap?',
         options: [
-          { answerText: 'HTML', isCorrect: true },
-          { answerText: 'HTML', isCorrect: false },
-          { answerText: 'HTML', isCorrect: false },
+          { answerText: 'navbar', isCorrect: true },
+          { answerText: 'menu', isCorrect: false },
+          { answerText: 'nav', isCorrect: false },
         ],
       },
       {
-        text: 'Çfarë është HTML?',
+        text: 'Si mund të krijojmë një buton në Bootstrap?',
         options: [
-          { answerText: 'HTML', isCorrect: true },
-          { answerText: 'HTML', isCorrect: false },
-          { answerText: 'HTML', isCorrect: false },
+          { answerText: 'Përdorimi i klases "btn" dhe varianteve të tjera të klases.', isCorrect: true },
+          { answerText: 'Përdorimi i klases "button".', isCorrect: false },
+          { answerText: 'Përdorimi i klases "link".', isCorrect: false },
         ],
       },
-    ]
+      {
+        text: 'Cila është funksioni i klases "container" në Bootstrap?',
+        options: [
+          { answerText: 'Krijon një kontenier me zgjatje fikse për ndarjen e kolonave.', isCorrect: true },
+          { answerText: 'Krijon një kontenier me zgjatje të plotë me ngjyra të ndryshme.', isCorrect: false },
+          { answerText: 'Krijon një kontenier për kodin HTML.', isCorrect: false },
+        ],
+      },
+      {
+        text: 'Si mund të përdorim klase për të krijuar një tabelë me Bootstrap?',
+        options: [
+          { answerText: 'Përdorimi i klases "table" dhe klaseve të tjera për stilizim.', isCorrect: true },
+          { answerText: 'Përdorimi i klases "tabular".', isCorrect: false },
+          { answerText: 'Përdorimi i klases "grid" për renditjen.', isCorrect: false },
+        ],
+      },
+      {
+        text: 'Cila klase përdoret për të krijuar një modal (dritare modale) në Bootstrap?',
+        options: [
+          { answerText: 'modal', isCorrect: true },
+          { answerText: 'popup', isCorrect: false },
+          { answerText: 'dialog', isCorrect: false },
+        ],
+      },
+      {
+        text: 'Si mund të përdorim klase për të shtuar ikona në Bootstrap?',
+        options: [
+          { answerText: 'Përdorimi i klases "glyphicon" ose "bi" për ikona.', isCorrect: true },
+          { answerText: 'Përdorimi i klases "icon".', isCorrect: false },
+          { answerText: 'Përdorimi i klases "img" për të ngarkuar ikona.', isCorrect: false },
+        ],
+      },
+      {
+        text: 'Cila klase përdoret për të krijuar një karusel (carousel) në Bootstrap?',
+        options: [
+          { answerText: 'carousel', isCorrect: true },
+          { answerText: 'slider', isCorrect: false },
+          { answerText: 'slideshow', isCorrect: false },
+        ],
+      },
+    ];
+    
   
     const handleAnswerOptions = (isCorrect) => {
       if (isCorrect) {
@@ -76,12 +117,14 @@ const BKuiz = () => {
                   You scored {score} out of {allQuestions.length}
                 </div>
                 <br></br>
-                <button className='m-2 h-10 w-44 rounded-md bg-slate-200 hover:bg-slate-100 hover:shadow-xl transition-all duration-500' onClick={()=> {window.location.reload()}}>Provo përsëri!</button>
-                <button className='m-2 h-10 w-44 rounded-md bg-slate-200 hover:bg-slate-100 hover:shadow-xl transition-all duration-500'><NavLink className='p-30px' to="/kuize">Kthehu!</NavLink></button>
+                <div className='flex flex- items-center justify-center md:flex-row'>
+                  <button className='m-2 h-10 w-44 rounded-md bg-slate-200 hover:bg-slate-100 hover:shadow-xl transition-all duration-500' onClick={()=> {window.location.reload()}}>Provo përsëri!</button>
+                  <p className='m-2 h-10 w-44 flex items-center justify-center rounded-md bg-slate-200 hover:bg-slate-100 hover:shadow-xl transition-all duration-500'><NavLink to="/kuize">Kthehu!</NavLink></p>
+              </div>
               </>
             ) : (
               <>
-                <div className='text-slate-700 text-xl font-semibold'>
+              <div className='text-slate-700 text-[16px] font-semibold'>
                   <div className='m-4'>
                     <span>Pytjet {currentQuestion + 1}</span>/{allQuestions.length}
                   </div>
