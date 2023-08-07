@@ -25,7 +25,7 @@ const navLinks =[
 const Footer = () => {
   return (
     <section className='w-full flex flex-col items-center justify-evenly bg-[#40394A] md:flex-row'>
-      <div className='flex flex-col my-[15px] md:my-[40px] max-w-[400px]'>
+      <div className='flex flex-col p-3 my-[15px] md:p-0 md:my-[40px] max-w-[400px]'>
           <NavLink to="/ballina" className='text-white font-bold text-3xl'>MsohuVet</NavLink>
           <p className='text-[14px] text-white font-medium leading-7 mt-[20px]'>MsohuVet është një platformë e mësimit të programimit në internet, e cila ofron resurse dhe kursa falas për të gjithë ata që dëshirojnë të fillojnë ose përmirësojnë njohuritë e tyre në fushën e programimit.</p>
           <div className='flex justify-between my-6 '>

@@ -65,7 +65,7 @@ const HtmlKuiz = () => {
   }
 
   return (
-    <div className='flex w-full h-screen justify-center items-center bg-gradient-to-r from-blue-500 to-violet-300'>
+    <div className='flex w-full h-screen justify-center p-1 items-center bg-gradient-to-r from-blue-500 to-violet-300 md:p-0'>
       <div className='bg-slate-100 p-12 rounded-lg shadow-2xl w-full max-w-xl text-center'>
 
         {

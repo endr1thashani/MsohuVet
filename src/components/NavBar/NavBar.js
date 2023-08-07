@@ -41,7 +41,7 @@ const NavBar = () => {
       <div className="flex w-full ">
           <div className='flex w-full items-center justify-between'>
 
-                <NavLink to="/home" className='text-[30px] md:text-[40px] font-bold text-white'>MsohuVet</NavLink>
+                <NavLink to="/ballina" className='text-[30px] md:text-[40px] font-bold text-white'>MsohuVet</NavLink>
 
                     <ul className='hidden md:flex decoration-none text-white gap-x-10 text-base font-bold '>
                           {
@@ -57,7 +57,7 @@ const NavBar = () => {
                           }
                     </ul>
 
-                <div onClick={handleNav} className='block md:hidden'>
+                <div onClick={handleNav} className='block md:hidden cursor-pointer'>
                           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
                 </div>
                 <div    

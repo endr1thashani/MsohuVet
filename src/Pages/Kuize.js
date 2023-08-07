@@ -11,17 +11,17 @@ const Kuize = () => {
           </div>
             <NavLink className='flex items-center  justify-center text-[#000] w-[150px] h-[50px] font-bold mb-[10px] bg-[#F16529] rounded-sm p-30px' to="/kuizihtml">Provo!</NavLink>
         </div>
-        <div className='max-w-[450px] flex flex-col items-center bg-gray-100'>
+        <div className='max-w-[450px] my-[25px] md:my-0 flex flex-col items-center bg-gray-100'>
           <div className='flex items-center justify-center bg-[#4285F4] w-[330px] h-[200px] mb-[20px] rounded-sm'>
             <h1 className='font-bold text-3xl mb-[20px]'>CSS</h1>
           </div>
-          <NavLink className='flex items-center  justify-center text-[#000] w-[150px] h-[50px] font-bold mb-[10px] bg-[#4285F4] rounded-sm p-30px' to="/kuizihtml">Provo!</NavLink>
+          <NavLink className='flex items-center  justify-center text-[#000] w-[150px] h-[50px] font-bold mb-[10px] bg-[#4285F4] rounded-sm p-30px' to="/kuizicss">Provo!</NavLink>
         </div>
         <div className='max-w-[450px] flex flex-col items-center bg-gray-100'>
           <div className='flex items-center justify-center bg-[#F0DB4F] w-[330px] h-[200px] mb-[20px] rounded-sm'>
             <h1 className='font-bold text-3xl mb-[20px]'>JavaScript</h1>
           </div>
-          <NavLink className='flex items-center  justify-center text-[#000] w-[150px] h-[50px] font-bold mb-[10px] bg-[#F0DB4F] rounded-sm p-30px' to="/kuizihtml">Provo!</NavLink>
+          <NavLink className='flex items-center  justify-center text-[#000] w-[150px] h-[50px] font-bold mb-[10px] bg-[#F0DB4F] rounded-sm p-30px' to="/kuizijs">Provo!</NavLink>
         </div>
       </div>
 
@@ -31,19 +31,19 @@ const Kuize = () => {
           <div className='flex items-center justify-center bg-[#61dbfb] w-[330px] h-[200px] mb-[20px] rounded-sm'>
             <h1 className='font-bold text-3xl mb-[20px]'>React</h1>
           </div>
-          <NavLink className='flex items-center  justify-center text-[#000] w-[150px] h-[50px] font-bold mb-[10px] bg-[#61dbfb] rounded-sm p-30px' to="/kuizihtml">Provo!</NavLink>
+          <NavLink className='flex items-center  justify-center text-[#000] w-[150px] h-[50px] font-bold mb-[10px] bg-[#61dbfb] rounded-sm p-30px' to="/kuizireact">Provo!</NavLink>
         </div>
-        <div className='max-w-[450px] flex flex-col items-center bg-gray-100'>
+        <div className='max-w-[450px] flex flex-col items-center bg-gray-100  my-[25px] md:my-0'>
           <div className='flex items-center justify-center bg-[#563d7c] w-[330px] h-[200px] mb-[20px] rounded-sm'>
             <h1 className='font-bold text-3xl mb-[20px]'>Bootstrap</h1>
           </div>
-          <NavLink className='flex items-center  justify-center text-[#000] w-[150px] h-[50px] font-bold mb-[10px] bg-[#563d7c] rounded-sm p-30px' to="/kuizihtml">Provo!</NavLink>
+          <NavLink className='flex items-center  justify-center text-[#000] w-[150px] h-[50px] font-bold mb-[10px] bg-[#563d7c] rounded-sm p-30px' to="/kuizibootstrap">Provo!</NavLink>
         </div>
         <div className='max-w-[450px] flex flex-col items-center bg-gray-100'>
           <div className='flex items-center justify-center bg-[#00b4b6] w-[330px] h-[200px] mb-[20px] rounded-sm'>
             <h1 className='font-bold text-3xl mb-[20px]'>TailwindCSS</h1>
           </div>
-          <NavLink className='flex items-center  justify-center text-[#000] w-[150px] h-[50px] font-bold mb-[10px] bg-[#00b4b6] rounded-sm p-30px' to="/kuizihtml">Provo!</NavLink>
+          <NavLink className='flex items-center  justify-center text-[#000] w-[150px] h-[50px] font-bold mb-[10px] bg-[#00b4b6] rounded-sm p-30px' to="/kuizitailwind">Provo!</NavLink>
         </div>
       </div>
       
