@@ -1,0 +1,34 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    @apply scroll-smooth;
+} 
+
+
+.icon{
+    @apply hover:text-[#0067FF] cursor-pointer 
+}
+
+.paginationBttns{
+    @apply flex justify-center max-w-[400px] mt-[40px] mb-[40px] font-bold
+}
+
+.paginationBttns a{
+    @apply p-[10px] m-[8px] rounded-[5px] border-solid border border-[#2b2eff] text-[#2b2eff] cursor-pointer hover:text-white hover:bg-[#2b2eff;]
+}
+
+.paginationActive a{
+    @apply text-white bg-[#2b2eff]
+}
+
+.paginationDisabled a {
+    @apply text-gray-700 bg-gray-500 hover:bg-gray-400
+}
